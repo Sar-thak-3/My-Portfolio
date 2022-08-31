@@ -1,0 +1,15 @@
+.differentworks{
+    /* background-color: aquamarine; */
+    width: 75vw;
+    margin: 0 auto;
+    padding: 5vh 0;
+}
+/* .differentworks ul{
+} */
+.differentworks ul li{
+    border: 2px solid cadetblue;
+    border-radius: 8px;
+    list-style: none;
+    padding: 9vh;
+    margin: 5vh;
+}

@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    height: 70vh;
+    width: 80vw;
+    /* margin: 3vh; */
+    padding-top: 12.5vh;
+    /* padding: 12.5vh 12vw; */
+    border: 3px solid cadetblue;
+    border-radius: 3vh;
+    text-align: center;
+}
+.logo{
+    width: 16vw;
+    height: 20vh;
+}
+.contactheading{
+    font-size: 4vh;
+    font-weight:bold;
+    text-decoration: underline;
+}
+.container nav ul{
+    display: flex;
+}
+.container nav ul li{
+    text-align: center;
+    width: 2vh;
+    padding: 0 8vw;
+    list-style: none;
+}
+.container nav ul li img{
+    width: 6vw;
+}
+.container nav ul li img:hover{
+    width: 7vw;
+}

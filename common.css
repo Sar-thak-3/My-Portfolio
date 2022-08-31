@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 12.5vh;
+  background-color: rgb(160, 230, 235);
+  position: fixed;
+}
+
+.heading img {
+  padding: 0 2vw 0 86vw;
+  height: 12.5vh;
+  width: 12.5vw;
+  /* justify-content: right;
+   text-align: right;
+   align-items: right;
+   float: right; */
+}
+
+.heading {
+  display: flex;
+  border-bottom: .1vh solid black;
+}
+
+.heading ul li {
+  display: inline;
+  text-align: center;
+  float: right;
+  border-left: 1px solid cadetblue;
+  /* position: absolute;right: 120px; */
+  padding: 3vh 1.5vw;
+  list-style: none;
+}
+
+.heading ul {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.heading ul li a {
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+}
+
+.heading ul li a:hover {
+  font-size: large;
+  border-bottom: 1px solid black;
+  color: #1d2a35;
+}
+
+.heading ul li.darkmode{
+  padding-left: 70vw;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #040506;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #040607;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+main{
+  padding-top: 12.5vh;
+  min-height: calc(100vh - 15vh - 4vh);
+}
+.dark-mode{
+  background-color: #1d2a35;
+  color: white;
+}
+
+footer {
+  border: 0.1px solid black;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(160, 230, 235);
+  font-style: 'Abel', 'ubuntu';
+}
+
+/* #1d2a35   ->This color in dark mode*/  
