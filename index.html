@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="common.css">
+    <script src="darkmode.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="heading">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li ><div class="darkmode"><label class="switch">
+                    <input type="checkbox" onclick="myFunction()" class="check">
+                    <span class="slider round"></span>
+                  </label></div></li> -->
+            </ul>
+            <img class="logo" src="logo.png">
+        </nav>
+    </header>
+    <main>
+        <div class="head1">
+            <div class="welcome">
+                <p>Welcome to Sarthak Portfolio</p>
+            </div>
+            <div class="important1">
+                <p class="topcontent">Sarthak Garg is currently a student of Punjab Engineering College,Chandigarh and practicing coding along with his college cirriculum to follow his passion.</p>
+            </div>
+        </div>    
+        <br>
+        <div class="important2">    
+            <p class="topcontent">Programmer in : <span class="auto-type"></span></p>
+        </div>
+        <br>
+        <hr>
+        <div class="resume">
+            <div class="resumeheading">
+                <h3 class="resumecontent">SARTHAK GARG</h3>
+                <hr class="between">
+                <br><br>
+                <p>Student, Developer , Programmer</p>
+            </div>
+            <div><img class="myResume" src="myResume.jpg"></div>
+        </div>    
+        <hr>
+        <div class="extra">
+            <div class="college">
+                <h3>My College</h3>
+                <hr color="black">
+                <p>Punjab Engineering College(Deemed to be University), Chandigarh offers B.tech , M.tech and Ph.d courses in various disciples. Foundation of college is laid in 1921 in Lahore. Great learning culture with various practicals and experiments. For more info you can refer to this <a href="https://pec.ac.in/" target="_main">link</a>.</p>
+            </div>
+            <div class="gallery">
+                <h3>My Gallery</h3>
+                <hr color="black">
+                <p>Some of my memories with my loved ones</p>
+            </div>
+        </div>
+        <hr><br>
+        <div class="feedback">
+            <p class="experience">How was your experience?</p>
+            <div class="contents">
+                <p class="give">If you want to give any feedback regarding anything, feel free to sumbit the form.</p>
+                <input type="text" class="feedbacktext" placeholder="Give your valuable feedback here!">
+                <input class="submitbutton" type="submit" value="Submit">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>Copyright &copy;Sarthak Portfolio</h4>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["HTML" , "CSS" , "JAVASCRIPT","C++","PYTHON"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <style>
+        main{
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100vh;
+        }
+    </style>    
+</body>
+</html>
