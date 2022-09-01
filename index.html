@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="homestyle.css">
     <link rel="stylesheet" href="common.css">
     <script src="darkmode.js"></script>
+    <script type="text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "memory1.jpg";
+        images[1] = "memory2.jpg";
+        images[2] = "memory3.jpg";
+        images[3] = "memory4.jpg";
+        images[4] = "memory5.jpg";
+    </script>
 </head>
-<body>
+
+<body onload="startTimer()">
     <header>
         <nav class="heading">
             <ul>
@@ -31,11 +57,12 @@
                 <p>Welcome to Sarthak Portfolio</p>
             </div>
             <div class="important1">
-                <p class="topcontent">Sarthak Garg is currently a student of Punjab Engineering College,Chandigarh and practicing coding along with his college cirriculum to follow his passion.</p>
+                <p class="topcontent">Sarthak Garg is currently a student of Punjab Engineering College,Chandigarh and
+                    practicing coding along with his college cirriculum to follow his passion.</p>
             </div>
-        </div>    
+        </div>
         <br>
-        <div class="important2">    
+        <div class="important2">
             <p class="topcontent">Programmer in : <span class="auto-type"></span></p>
         </div>
         <br>
@@ -48,18 +75,30 @@
                 <p>Student, Developer , Programmer</p>
             </div>
             <div><img class="myResume" src="myResume.jpg"></div>
-        </div>    
+        </div>
         <hr>
         <div class="extra">
             <div class="college">
                 <h3>My College</h3>
                 <hr color="black">
-                <p>Punjab Engineering College(Deemed to be University), Chandigarh offers B.tech , M.tech and Ph.d courses in various disciples. Foundation of college is laid in 1921 in Lahore. Great learning culture with various practicals and experiments. For more info you can refer to this <a href="https://pec.ac.in/" target="_main">link</a>.</p>
+                <p>Punjab Engineering College(Deemed to be University), Chandigarh offers B.tech , M.tech and Ph.d
+                    courses in various disciples. Foundation of college is laid in 1921 in Lahore. Great learning
+                    culture with various practicals and experiments. For more info you can refer to this <a
+                        href="https://pec.ac.in/" target="_main">link</a>.</p>
             </div>
             <div class="gallery">
                 <h3>My Gallery</h3>
                 <hr color="black">
-                <p>Some of my memories with my loved ones</p>
+                <div class="functions">
+                    <div class="leftbutton">
+                        <button type="button" onclick="displayPreviousImage()" class="buttons"><i
+                                class="fa fa-angle-left" style="font-size:3vw"></i></button>
+                    </div>
+                    <img id="img" src="memory1.jpg" width="380vw" height="210vh">
+                    <div class="rightbutton">
+                        <button type="button" onclick="displayNextImage()" class="buttons"><i class="fa fa-angle-right" style="font-size:3vw"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
         <hr><br>
@@ -79,19 +118,21 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto-type", {
-            strings: ["HTML" , "CSS" , "JAVASCRIPT","C++","PYTHON"],
+            strings: ["HTML", "CSS", "JAVASCRIPT", "C++", "PYTHON"],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true
         })
     </script>
     <style>
-        main{
+        main {
             background-image: url('background.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100vh;
         }
-    </style>    
+    </style>
+    <!-- <style src="homestyle.js"></style> -->
 </body>
+
 </html>
